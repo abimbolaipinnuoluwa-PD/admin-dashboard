@@ -5,22 +5,22 @@ An Admin Dashboard design project that focuses on the knowledge and practice of 
 ``` See Below the Project Folder Structure:
 
 Admin-Dashboard/
-|── index.html
+|── adminlayoutindex.html
 │   └── Layout.html
 ├── README.md
 └── 
 ├── src/
 |   |── Pages/
 |   |   ├── About.html
-|   |   ├── Contact.html
-|   |   ├── Home.html
-|   |   ├── Profile.html
-|   |   ├── Skills.html
+|   |   ├── AboutFitApp.html
+|   |   ├── FitAppdashboard.html
+|   |   ├── FitnessAppindex.html
+|   |   ├── Personal-Details.html
 |   |   └── Any other html files
 │   ├── CSS/
-│   │   |── Layout.CSS
-│   │   └── Positioning.CSS
-|   |   └── Style.CSS
+│   │   |── AdminLayout.CSS
+│   │   └── icon-set.CSS
+|   |   └── Other Style.CSS
 │   └── Assets/
 │       └── profile.jpg (or any other image format)
 |       |── icons/  (SVGs from Material Design Icons)
