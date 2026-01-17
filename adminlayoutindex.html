@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- <title>Document</title> -->
+        <title>Admin Dashboard</title>
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Garamond&family=Times+New+Roman&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="./src/css/adminlayout.css">
+        <!-- <link rel="stylesheet" href="../css/adminpositioning.css"> -->
+        <!-- NEW -->
+        <link rel="stylesheet" href="./src/CSS/icon-set.css">
+        <!-- For various theme CSS variables -->
+        <link rel="stylesheet" href="./src/CSS/themeCSSVariable.css">
+
+        <!-- For offline and online TailwindCSS styles and Fonts using tailwind CLI -->
+        <!-- <link rel="stylesheet" href="/src/CSS/output.css"> --> 
+
+        <!-- For online TailwindCSS styles and Fonts using PLay CDN-->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    </head>
+    <body>
+        <div class="dashboard-container">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="branding">
+                    <!-- Dashboard logo with icon -->
+                    <a class="icon" href="./src/Pages/FitAppdashboard.html">
+                        <img class="icon" src="/src/Assets/icons/png-mdi icons/view-dashboard.png" 
+                        alt="" width="50" height="50">
+                    </a>
+                    <h2>Dashboard</h2>
+                </div>
+                <nav class="navigation">
+                    <!-- <p> -->
+                    <ul>
+                        <!-- <li <a href="/src/Pages/FitAppdashboard.html">
+                                <img src="/src/Assets/icons/png-mdi icons/view-dashboard.png" 
+                                alt="" width="20" height="15"> <span>Dashboard</span>
+                            </a>
+                        </li> <br> <br> -->
+                        <li> <a class="icon" href="./src/Pages/FitnessAppindex.html">
+                                <img class="icon" src="/src/Assets/icons/png-mdi icons/home-variant.png" 
+                                alt="" width="20" height="15">
+                            </a>
+                            <span>Home</span>
+                        </li>
+                        <li> <a class="icon" href="./src/Pages/Personal-Details.html">
+                                <img class="icon" src="/src/Assets/icons/png-mdi icons/card-account-details.png" 
+                                alt="" width="20" height="15">
+                            </a>
+                            <span>Profile</span>
+                        </li>
+                        <li> <a class="icon" href="/src/Pages/Message.html">
+                                <img class="icon" src="/src/Assets/icons/png-mdi icons/message-reply.png" 
+                                alt="" width="20" height="15">
+                            </a>
+                            <span>Messages</span>
+                        </li>
+                        <li> <a class="icon" href="/src/Pages/HistoryRecord.html">
+                                <img class="icon" src="/src/Assets/icons/png-mdi icons/history.png" 
+                                alt="" width="20" height="15">
+                            </a>
+                            <span>History</span>
+                        </li>
+                        <li> <a class="icon" href="/src/Pages/TasksCalendars.html">
+                                <img class="icon" src="/src/Assets/icons/png-mdi icons/note-multiple.png" 
+                                alt="" width="20" height="15">
+                            </a>
+                            <span>Tasks</span>
+                        </li>
+                        <li> <a class="icon" href="/src/Pages/AccountGroups.html">
+                                <img class="icon" src="/src/Assets/icons/png-mdi icons/account-group.png" 
+                                alt="" width="20" height="15">
+                            </a>
+                            <span>Communities</span>
+                        </li> <br><br><br>
+                        <li> <a class="icon" href="/src/Pages/SettingsCOG.html">
+                                <img class="icon" src="/src/Assets/icons/png-mdi icons/cog.png" 
+                                alt="" width="20" height="15">
+                            </a>
+                            <span>Settings</span>
+                        </li>
+                        <li> <a class="icon" href="/src/Pages/Support-Help.html">
+                                <img class="icon" src="/src/Assets/icons/png-mdi icons/help-box.png" 
+                                alt="" width="20" height="15">
+                            </a>
+                            <span>Support</span>
+                        </li>
+                        <li> <a class="icon" href="/src/Pages/SecurityShieldCheck.html">
+                                <img class="icon" src="/src/Assets/icons/png-mdi icons/shield-check.png" 
+                                alt="" width="20" height="15">
+                            </a>  
+                            <span>Privacy</span>
+                        </li>
+                    </ul>
+                    <!-- </p> -->
+                </nav>
+            </aside>
+
+            <section>
+                <!-- Header -->
+                <header class="header">
+                    <!-- Top row: search + notification + user info -->
+                    <!-- <div> -->
+                        <div class="header-top">
+                        <div class="search-bar">
+                            <input type="text" placeholder="Search...">
+                        </div>
+                        <div class="notification">
+                            <!-- Bell Icon -->
+                            <!-- class="icon1" -->
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <img src="/src/Assets/icons/png-mdi icons/bell-ring-outline.png" alt="Notifications">
+                                <span>Morgan Oakley (@morgan)</span>
+                            </svg>
+                        </div>
+                    <!-- </div> -->
+                    <!-- <div> -->
+                        <!-- Bottom row: buttons -->
+                        <div class="user-info">
+                            <!-- <img src="../assets/images/profile-placeholder.png" alt="User" class="profile-pic"> -->
+                            <img src="/src/Assets/images/downloaded morgan profile pic.jpg" alt="User" class="profile-pic">
+                            <span>Hi there, Morgan Oakley (@morgan)</span>
+                        </div>
+                        <div class="header-buttons">
+                            <button>New</button>
+                            <button>Upload</button>
+                            <button>Share</button>
+                        </div>
+                    <!-- </div> -->
+                </header>
+            </section>
+            
+            <!-- Main Content -->
+            <main class="main-content">
+                <section>
+                    <!-- Projects Heading -->
+                    <!-- <h3 class="heading3">Your Projects</h3> -->
+                    <div><h3 class="heading3">Your Projects</h3><div>
+                    <!-- Projects Section -->
+                    <section class="projects">
+                        <!-- <div><h3 class="heading3">Your Projects</h3><div> -->
+                        <div class="project-card">
+                            <span><strong>Super Cool Project</strong></span>
+                            <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum corrupti, nisi repellendus velit error
+                                praesentium quos inventore optio ex consequatur...
+                                <div class="project-icons">
+                                    <!-- Star Icon -->
+                                    <!-- class="adjust-svg" for star icon -->
+                                    <svg width="15" height="12" class="adjust-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <title>star-plus-outline</title>
+                                        <!-- <path id="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22  -->
+                                        <path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22
+                                        9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 
+                                        10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 
+                                        15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17
+                                        14V17H14V19H17V22H19V19H22V17H19V14H17Z" /> 
+                                        <!-- 14V17H14V19H17V22H19V19H22V17H19V14H17Z"></path>  -->
+                                        <!-- 14V17H14V19H17V22H19V19H22V17H19V14H17Z" width="30" height="32" />  -->
+                                    </svg>
+                                    <!-- Eye Icon -->
+                                    <svg width="15" height="12" class="adjust-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <title>eye-plus-outline</title>
+                                        <path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,
+                                        19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,
+                                        18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,
+                                        17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,
+                                        8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,
+                                        12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,
+                                        13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,
+                                        3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,
+                                        14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" alt="" />
+                                    </svg>
+                                    <!-- Lightbulb Icon -->
+                                    <svg width="10" height="10" class="adjust-svg" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24">
+                                        <title>share-variant</title>
+                                        <path d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,
+                                        12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,
+                                        7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,
+                                        3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,
+                                        9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,
+                                        14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,
+                                        20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,
+                                        2.92 0 0,0 18,16.08Z" alt="" />
+                                    </svg>
+
+                                    <!-- Eye Icon -->
+                                    <!-- <svg class="icon" viewBox="0 0 24 24">
+                                        <img src="/src/Assets/icons/png-mdi icons/eye-plus-outline.png" alt="" width="10" height="12">
+                                    </svg> -->
+                                    <!-- Lightbulb Icon -->
+                                    <!-- <svg class="icon" viewBox="0 0 24 24">
+                                        <img src="/src/Assets/icons/png-mdi icons/share-variant.png" alt="" width="10" height="12">
+                                    </svg>     -->
+                                </div>
+                            </p>
+                        </div>
+                        <div class="project-card">
+                            <span><strong>Less Cool Project</strong></span>
+                            <p class="p1">This involve less complex Projects or Tasks
+                                <div class="project-icons">
+                                    <!-- Star Icon -->
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <img src="/src/Assets/icons/png-mdi icons/star-plus-outline.png" alt="" width="15" height="15">
+                                    </svg>
+                                    <!-- Eye Icon -->
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <img src="/src/Assets/icons/png-mdi icons/eye-plus-outline.png" alt="" width="15" height="15">
+                                    </svg>
+                                    <!-- Lightbulb Icon -->
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <img src="/src/Assets/icons/png-mdi icons/share-variant.png" alt="" width="15" height="15">
+                                    </svg>    
+                                </div>
+                            </p>
+                        </div>
+                        <div class="project-card">
+                            <span><strong>Impossible App</strong></span>
+                            <p class="p1">This contains unimaginable apps, difficult game, riddles, chess etc.
+                                <div class="project-icons">
+                                    <!-- Star Icon -->
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <img src="/src/Assets/icons/png-mdi icons/star-plus-outline.png" alt="" width="15" height="15">
+                                    </svg>
+                                    <!-- Eye Icon -->
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <img src="/src/Assets/icons/png-mdi icons/eye-plus-outline.png" alt="" width="15" height="15">
+                                    </svg>
+                                    <!-- Lightbulb Icon -->
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <img src="/src/Assets/icons/png-mdi icons/share-variant.png" alt="" width="15" height="15">
+                                    </svg>    
+                                </div>
+                            </p>
+                        </div>
+                        <div class="project-card">
+                            <span><strong>Easy Peasy App</strong></span>
+                            <p class="p1">This contains unimaginable apps, with simple game like ludo, whot etc
+                                <div class="project-icons">
+                                    <!-- Star Icon -->
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <img src="/src/Assets/icons/png-mdi icons/star-plus-outline.png" alt="" width="15" height="15">
+                                    </svg>
+                                    <!-- Eye Icon -->
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <img src="/src/Assets/icons/png-mdi icons/eye-plus-outline.png" alt="" width="15" height="15">
+                                    </svg>
+                                    <!-- Lightbulb Icon -->
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <img src="/src/Assets/icons/png-mdi icons/share-variant.png" alt="" width="15" height="15">
+                                    </svg>    
+                                </div>
+                            </p>
+                        </div>
+                        <div class="project-card">
+                            <span><strong>Ad Blocker</strong></span>
+                            <p class="p1">This app or option when installed or subscribed unto is used to block several spams or unnecessary adverts
+                                <div class="project-icons">
+                                    <!-- Star Icon -->
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <img src="/src/Assets/icons/png-mdi icons/star-plus-outline.png" alt="" width="15" height="15">
+                                    </svg>
+                                    <!-- Eye Icon -->
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <img src="/src/Assets/icons/png-mdi icons/eye-plus-outline.png" alt="" width="15" height="15">
+                                    </svg>
+                                    <!-- Lightbulb Icon -->
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <img src="/src/Assets/icons/png-mdi icons/share-variant.png" alt="" width="15" height="15">
+                                    </svg>    
+                                </div>
+                            </p>
+                        </div>
+                        <div class="project-card">
+                            <span><strong>Money Maker</strong></span>
+                            <p class="p1">Here contains links or pages to invest in shares or skills and make Money
+                                <div class="project-icons">
+                                    <!-- Star Icon -->
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <img src="/src/Assets/icons/png-mdi icons/star-plus-outline.png" alt="" width="15" height="15">
+                                    </svg>
+                                    <!-- Eye Icon -->
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <img src="/src/Assets/icons/png-mdi icons/eye-plus-outline.png" alt="" width="15" height="15">
+                                    </svg>
+                                    <!-- Lightbulb Icon -->
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <img src="/src/Assets/icons/png-mdi icons/share-variant.png" alt="" width="15" height="15">
+                                    </svg>    
+                                </div>
+                            </p>
+                        </div>
+                    </section>
+                </section>
+   
+                <!-- Announcements Section -->
+                <section class="announcements">
+                    <!-- <h3 <span class="heading3">Announcements </span></h3> -->
+                    <span class="section-title">Announcements</span>
+                    <div class="announcement-card"> 
+                        <span><strong>Site Maintenance</strong></span>
+                        <p class="p1">This lead to FAQ for answers to various site issue.
+                            <div class="announce-icons">
+                                <!-- Alert Icon -->
+                            </div>
+                        </p>
+                    </div>
+                    <div class="announcement-card">
+                        <span><strong>Community Share Day</strong></span>
+                        <p class="p1">This is a Community or group of Communities where one can ask for help, 
+                            interact, share and collaborate.
+                            <div class="announce-icons">
+                                <!-- Calendar Icon -->
+                            </div>
+                        </p>
+                    </div>
+                    <div class="announcement-card"> 
+                        <span><strong>Updated Privacy Policy</strong></span>
+                        <p class="p1">This links contains the governing policies 
+                            guiding the use of this environment, interactive conduct 
+                            and compliance etc.
+                            <!-- Shield Icon --> 
+                            <div class="announce-icons">
+                                <!-- Shield Icon -->
+                                <!-- Star Icon -->
+                                <!-- <svg class="icon" viewBox="0 0 24 24">
+                                    <img src="/src/Assets/icons/png-mdi icons/star-plus-outline.png" alt="">
+                                </svg> -->
+                                <!-- Eye Icon -->
+                                <!-- <svg class="icon" viewBox="0 0 24 24">
+                                    <img src="/src/Assets/icons/png-mdi icons/eye-plus-outline.png" alt="">
+                                </svg> -->
+                                <!-- Lightbulb Icon -->
+                                <!-- <svg class="icon" viewBox="0 0 24 24">
+                                    <img src="/src/Assets/icons/png-mdi icons/share-variant.png" alt="">
+                                </svg>     -->
+                            </div>
+                        </p>
+                    </div>
+                </section>
+            
+                <!-- Trending Section -->
+                <section class="trending">
+                    <h3 class="heading3">Trending</h3>
+                    <div class="trending-card">
+                        <!-- <p> -->
+                            <!-- Account Icon -->
+                            <div class="trending-icons">
+                                <!-- Star Icon -->
+                                <svg class="icon" viewBox="0 0 24 24">
+                                    <img src="/src/Assets/icons/png-mdi icons/peace.png" alt="" width="20" height="12">
+                                </svg>
+                                <span>@tegan: World Peace Builder </span>
+                            </div>
+                        <!-- </p> -->
+                    </div>
+                    <div class="trending-card">
+                        <!-- <p> -->
+                            <!-- Rocket Icon -->
+                            <div class="trending-icons">
+                                <!-- Star Icon -->
+                                <svg class="icon" viewBox="0 0 24 24">
+                                    <img src="/src/Assets/icons/png-mdi icons/face-woman-profile.png" alt=""width="20" height="12">
+                                </svg>
+                                <span>@morgan: Super Cool Project </span> 
+                            </div>
+                        <!-- </p> -->
+                    </div>
+                    <div class="trending-card">
+                        <!-- <p> -->
+                            <!-- Lightbulb Icon -->
+                            <div class="trending-icons">
+                                <!-- Star Icon -->
+                                <svg class="icon" viewBox="0 0 24 24">
+                                    <img src="/src/Assets/icons/png-mdi icons/apps.png" alt="" width="20" height="12">
+                                </svg>
+                                <span>@kendall: Life Changing App</span>
+                            </div>
+                        <!-- </p> -->
+                    </div>
+                    <div class="trending-card">
+                        <!-- <p> -->
+                            <!-- Traffic Icon -->
+                            <div class="trending-icons">
+                                <!-- Star Icon -->
+                                <svg class="icon" viewBox="0 0 24 24">
+                                    <img src="/src/Assets/icons/png-mdi icons/traffic-light.png" alt="" width="20" height="12">
+                                </svg>
+                                <span class="mdi-mdi-traffic-light">@alex: No Traffic Maker</span>
+                            </div>
+                        <!-- </p> -->
+                        <!-- <h1 class="text-2xl">tailwindcss</h1>
+                        <p class="flex">I am Abimbola trying tailwind to install it offline</p> -->
+                    </div>
+                    <!-- <section>
+                        <div>
+                            <h1 class="text-2xl">Tailwindcss</h1>
+                            <p class="flex">I am Abimbola trying tailwind to install it offline</p>
+                        </div>
+                    </section> -->
+                </section>
+            </main>
+        </div>
+    </body>
+</html>

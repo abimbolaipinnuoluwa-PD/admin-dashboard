@@ -1,0 +1,173 @@
+/* ===========================
+   Root Theme Variables
+   =========================== */
+:root {
+  /* Global colors */
+  --background-color: #ffffff;
+  --text-color: #222;
+  --border-color: #ccc;
+
+  /* Sidebar */
+  --sidebar-bg: #f0f0f0;
+  --sidebar-brand-bg: #d9e4f5;
+
+  /* Header */
+  --header-bg: #e8f5e9;
+
+  /* Main Content */
+  --main-bg: #fffde7;
+  --projects-bg: #fce4ec;
+  --announcements-bg: #e3f2fd;
+  --trending-bg: #f1f8e9;
+
+  /* Icon colors */
+  --icon-color: #444;
+  --icon-hover-color: #1976d2;
+  --project-icon-color: #333;
+  --announcement-icon-color: #d32f2f;
+  --trending-icon-color: #388e3c;
+}
+
+/* ===========================
+   Global Styles
+   =========================== */
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Garamond', 'Times New Roman', serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 80px 1fr;
+  height: 100vh;
+}
+
+/* ===========================
+   Sidebar
+   =========================== */
+.sidebar {
+  grid-row: 1 / 3;
+  background-color: var(--sidebar-bg);
+  border-right: 2px solid var(--border-color);
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  padding: 10px;
+}
+
+.branding {
+  background-color: var(--sidebar-brand-bg);
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===========================
+   Header
+   =========================== */
+.header {
+  grid-column: 2 / 3;
+  background-color: var(--header-bg);
+  border-bottom: 2px solid var(--border-color);
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  align-items: center;
+  padding: 10px;
+}
+
+/* ===========================
+   Main Content
+   =========================== */
+.main-content {
+  grid-column: 2 / 3;
+  background-color: var(--main-bg);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+.projects {
+  background-color: var(--projects-bg);
+  border: 1px solid var(--border-color);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+.announcements {
+  background-color: var(--announcements-bg);
+  border: 1px solid var(--border-color);
+  padding: 10px;
+}
+
+.trending {
+  background-color: var(--trending-bg);
+  border: 1px solid var(--border-color);
+  padding: 10px;
+}
+
+/* ===========================
+   Icon Styling
+   =========================== */
+.icon {
+  width: 28px;
+  height: 28px;
+  fill: var(--icon-color);
+  margin: 0 5px;
+  transition: fill 0.3s ease, transform 0.2s ease;
+}
+
+.icon:hover {
+  fill: var(--icon-hover-color);
+  transform: scale(1.1);
+}
+
+.project-card .icon {
+  fill: var(--project-icon-color);
+}
+
+.announcement-card .icon {
+  fill: var(--announcement-icon-color);
+}
+
+.trending-card .icon {
+  fill: var(--trending-icon-color);
+}
+
+/* ===========================
+   Accessibility
+   =========================== */
+@media (prefers-contrast: more) {
+  .icon {
+    fill: #000 !important;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #121212;
+    --text-color: #f5f5f5;
+    --border-color: #444;
+
+    --sidebar-bg: #1e1e1e;
+    --sidebar-brand-bg: #333;
+
+    --header-bg: #2e2e2e;
+    --main-bg: #1a1a1a;
+    --projects-bg: #2c1f2c;
+    --announcements-bg: #1f2c3c;
+    --trending-bg: #1f3c2c;
+
+    --icon-color: #f5f5f5;
+    --icon-hover-color: #90caf9;
+    --project-icon-color: #ffcc80;
+    --announcement-icon-color: #ef9a9a;
+    --trending-icon-color: #a5d6a7;
+  }
+}

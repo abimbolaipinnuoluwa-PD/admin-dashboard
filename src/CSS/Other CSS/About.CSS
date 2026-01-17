@@ -1,0 +1,107 @@
+/* my added about FitApp style */
+/* style.css */
+.onboarding{
+    text-align: center;
+    padding: 20px;
+}
+a .about{
+    color: #0078d4;
+    text-decoration: none;
+}
+
+/* cssCopy codeinput::placeholder */
+/* input::placeholder{ */
+  /* color: #999; Light gray color */
+  /* font-style: italic; Italic style/Italicized text */
+  /* text-decoration-color: yellowgreen; #555 - Darker gray for better visibility */
+  /* opacity: 1; Full opacity */
+  /* max-width: 600px; Limit the width of the placeholder text */
+/* } */
+
+*{
+    background-color: plum;
+    color: black;
+    text-align: justify;
+    font: 20;
+    font-style: normal;
+    line-height: 1.6;
+    font-family: Garamond,Georgia, 'Times New Roman', Times, serif, Helvetica, sans-serif;
+    font-size: 15px; /* Smaller font size for smaller screens */
+}
+
+html, body {
+    height: 100%;
+    margin: 5px;
+    list-style-type: bullet;
+    list-style-type: disc; /* Default bullet style: disc, circle, square */
+}
+
+body {
+    list-style-type: disc; /* Default bullet style: disc, circle, square */
+    padding-left: 0%;    /* Indent bullets */
+    position: relative;
+    margin-bottom: 8px;
+}
+
+
+h1, h2 {
+    text-align: center;
+    font-family: Garamond,Georgia, 'Times New Roman', 'Arial-Black', 'Gadget', Times, serif, Helvetica, sans-serif;
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+p{
+    margin: 10px;
+    padding: 5px;
+    text-align: justify;
+    max-width: 700px;
+}
+
+ul{
+    padding: 2%;
+    margin: 1%;
+    padding-left: 20px;    /* Indent bullets */
+    list-style-type: disc; /* Default bullet style: disc, circle, square */
+
+}
+
+li{
+    list-style: disc;
+    list-style-type: disc;
+    display: list-item;
+    justify-content: justify;
+}
+
+a{
+    display: flex;
+    text-decoration-style: none; color: blue;
+    justify-content: justify;
+}
+
+label {
+    top: auto;
+    left: 40px;
+    transition: all 0.3s;
+}
+
+/* Class selector: applies only to elements with class="about-me-description" */
+.about-me-description {
+    color: darkblue;
+    font-weight: bold;
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0;
+    text-align: justify;
+}
+
+.navbar {
+    /* color: #555; */
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0;
+    /* margin: auto 0; */
+    /* text-align: justify; */
+}
