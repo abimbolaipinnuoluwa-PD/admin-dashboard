@@ -5,7 +5,7 @@ An Admin Dashboard design project that focuses on the knowledge and practice of 
 ``` See Below the Project Folder Structure:
 
 Admin-Dashboard/
-|── adminlayoutindex.html
+|── index.html
 │   └── Layout.html
 ├── README.md
 └── 

@@ -33,20 +33,23 @@ body {
 
 .navigation ul {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .navigation li {
+  list-style: none;
   display: flex;
   align-items: center;
   gap: 10px; /* gap between icon and text */
+  margin: 8px 0;
   padding: 10px;
   border-bottom: 1px solid #ccc;
 }
 
 /* .navigation li :active-view-transition { */
   .navigation li a {
+  list-style: none;
   display: flex;
   align-items: center;
   gap: 10px; /* gap between icon and text */
@@ -63,25 +66,30 @@ body {
 
 /* Header container */
 .header {
-  grid-column: 2 / 3;
-  background-color: #e8f5e9;
-  /* border-bottom: 2px solid #ccc;
-  display: grid; 
-  padding: 10px;
-  gap: 15px; /* use 10px */
-
-  /* grid-template-columns: 2fr 2fr 1fr; */
-  grid-template-columns: 2fr auto 2fr auto;
-  /* grid-template-rows: auto auto; */
-  align-items: center;
-  
   display: flex;
-  flex-direction: column;   /* stack top row and bottom row */
+  /* justify-content: center; */
+  justify-content: space-between;  
+  align-items: center;
   padding: 10px 20px;
   border-bottom: 1px solid #ccc;
   background-color: bisque;
-  gap: 10px; 
+  /* background-color: #e8f5e9; */
+  /* padding: 10px; */
+  gap: 15px; /* use 10px */
+  grid-column: 2 / 3;
+  grid-template-columns: 2fr auto 2fr auto;
+  /* flex-direction: column;   stack top row and bottom row */
+  flex-direction: row;   /* stack top row and bottom row */
+
+  /* display: grid;  */
+  /* /* border-bottom: 2px solid #ccc; */
+  /* grid-template-columns: 2fr 2fr 1fr; */
+  /* grid-template-rows: auto auto; */
+  
+  
+  
   /* height: -120vh;               or 5px spacing between rows */
+  
 }
 
 /* .header div { */
@@ -112,7 +120,7 @@ body {
 
 
 .search-bar input {
-  width: 600%; /* 90% or 1024 */
+  width: 350%; /* 90%, 600% or 1024% */
   padding: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -120,7 +128,7 @@ body {
 
 /* Notification bell sits beside search bar */
 .notification {
-  margin-left: 100px;
+  margin-left: 20px; /* 20px or 100px */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -239,20 +247,23 @@ body {
   background-color: #e3f2fd;
   /* background-color: #fafafa; */
   border: 1px solid #999;
-  padding: 10px; /* 15px */
+  padding: 15px; /* 15px */
   /* the command below are good and can be used or not */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; 
+  margin: 10px;
+  gap: 10px;
 }
 
 .section-title{
   display: block;
-  margin-bottom: 10px;
+  margin: 10px;
+  gap: 20px;
+  margin-top: 10px;
   font-weight: bold;
   /* not the right place but i just use it */
-  background-color: #fafafa; 
-
+  /* background-color: #fafafa;  */
 }
 
 .announcement-card {
@@ -398,3 +409,25 @@ body {
   height: 16px; /* 26px is too much */
   fill: #444; /* Neutral dark tone */
 }
+
+ul {
+  list-style: none;
+  /* display: flex; */
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+p{
+    /* color: brown; */
+    color: blueviolet;
+    /* color: rgba(brown, green, blue, gold); */
+}
+
+/* span { */
+    /* color: gold; */
+    /* color: blueviolet; */
+/* } */
