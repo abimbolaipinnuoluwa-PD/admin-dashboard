@@ -1,0 +1,41 @@
+/* Base icon style */
+.icon {
+  width: 28px;
+  height: 28px;
+  fill: var(--icon-color, #444); /* Default dark tone */
+  margin: 0 5px;
+  transition: fill 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+.icon:hover {
+  fill: var(--icon-hover-color, #1976d2); /* Blue accent on hover */
+  transform: scale(1.1);
+}
+
+/* Section-specific overrides */
+.project-card .icon {
+  fill: var(--project-icon-color, #333);
+}
+
+.announcement-card .icon {
+  fill: var(--announcement-icon-color, #d32f2f); /* Red for alerts */
+}
+
+.trending-card .icon {
+  fill: var(--trending-icon-color, #388e3c); /* Green for trending */
+}
+
+/* Accessibility: high contrast mode */
+@media (prefers-contrast: more) {
+  .icon {
+    fill: #000 !important;
+  }
+}
+
+/* Accessibility: dark mode */
+@media (prefers-color-scheme: dark) {
+  .icon {
+    fill: #f5f5f5 !important;
+  }
+}

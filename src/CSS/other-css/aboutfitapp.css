@@ -1,0 +1,61 @@
+/* my added aboutFitApp style */
+/* style.css */
+.about{
+    text-align: center;
+    padding: 20px;
+}
+
+.about a{
+    color: #0078d4;
+    text-decoration: underline;
+    margin: 10px; /* 5px */
+}
+
+.dashboard ul li{
+    list-style: none;
+    padding: 10px;
+}
+
+/* others */
+
+*{
+    background-color: plum;
+    color: black;
+    text-align: justify;
+    font: 20;
+    font-style: normal;
+    line-height: 1.6;
+    font-family: Garamond,Georgia, 'Times New Roman', Times, serif, Helvetica, sans-serif;
+    font-size: 15px; /* Smaller font size for smaller screens */
+}
+
+/* cssCopy codeinput::placeholder */
+/* input::placeholder{ */
+  /* color: #999; Light gray color */
+  /* font-style: italic; Italic style/Italicized text */
+  /* text-decoration-color: yellowgreen; #555 - Darker gray for better visibility */
+  /* opacity: 1; Full opacity */
+  /* max-width: 600px; Limit the width of the placeholder text */
+/* } */
+
+p{
+    /* color: rgba(brown, green, blue, gold); */
+    color: rgba(red, green, blue, alpha);
+    text-align: justify;
+}
+
+.hannah {
+    color: brown;
+}
+
+#hannah {
+    color: beige;
+}
+
+.span {
+    color: gold;
+}
+
+span {
+    color: gold;
+}

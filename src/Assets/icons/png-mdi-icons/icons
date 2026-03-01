@@ -1,0 +1,7 @@
+<!-- # This is for test script.js
+
+const name = "Naomi";
+
+console.log(name);
+
+console.log("welcome to javascript"); -->
